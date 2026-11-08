@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="${mod_id}"
+version="${version}"
+displayName="${mod_name}"
+authors="Jannyboy11"
+credits="Original plugin by Jannyboy11, NeoForge port by MultiTool"
+description='''
+Server-side mod for NeoForge 1.21.1 that lets operators view and edit the inventories and ender chests of players, including players who are currently offline.
+'''
+
+[[dependencies.${mod_id}]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,22)"
+ordering="NONE"
+side="SERVER"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="SERVER"
